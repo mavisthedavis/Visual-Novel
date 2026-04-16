@@ -20,7 +20,7 @@ img {
 }  
 #character { 
   width: 40%; 
-  height: 90%;  
+  height: 100%;  
 }
 #text-container { 
   width: 100%; 
@@ -41,6 +41,6 @@ img {
 } 
 .view-side  {
   width: 30%; 
-  height: 90%;  
+  height: 100%;  
   background-color: red;  
 }
