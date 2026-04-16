@@ -19,5 +19,5 @@ function imageChange() {
     if (imgList[textIndex].effect != false) { 
       console.log("test"); 
     } 
-    $("img").src = imgList[textIndex]; 
+    $("img").src = imgList[textIndex].src; 
 } 
