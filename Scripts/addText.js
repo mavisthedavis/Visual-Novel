@@ -4,7 +4,7 @@ textIndex = 0;
 const parentElementList = [$("#header")[0]];  
 var delay = 0; 
 function makeTxt() {    
-    if (!(textIndex > textList.length - 1) {  
+    if (textIndex < textList.length - 1) {  
         $("#text-box").text(""); 
         var element = $("#text-box");    
         console.log(element); 
