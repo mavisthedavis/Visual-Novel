@@ -1,7 +1,6 @@
 $("html").on( "mousedown", makeTxt);  
 //textList = ["test1", "Nettle was, and is a goblin. With large eyes that poked out of her skull like a water droplet on a flat surface. She is quite smaller than most of her fellow sapiens, being three balls of lettuce, and two bell peppers tall. " 
            //];  
-var intervalList = []; 
 textIndex = 0; 
 const parentElementList = [$("#header")[0]];  
 var delay = 0;   
@@ -31,7 +30,6 @@ function makeTxt() {
                 console.log("interval clear"); 
             } 
         }, 30);  
-        intervalList.push(textInt); 
         textIndex++;   
     }
 }    
