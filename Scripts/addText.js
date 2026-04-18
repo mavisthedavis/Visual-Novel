@@ -4,6 +4,7 @@ const parentElementList = [$("#header")[0]];
 var delay = 0;   
 var firstClick = true;   
 var element = $("#text");    
+var intervalIndex = 0;
 function makeTxt() {    
     console.log("mousedown"); 
     /* 
@@ -16,12 +17,13 @@ function makeTxt() {
            }   
            textIndex++; 
     } */ 
-    $("#text").text("");  
+    $("#text").text("");   
+    intervalIndex = 0; 
     if (textIndex < textList.length) {    
         //imageChange(); 
         var textInt = setInterval(function() {  
             element.append(textList[textIndex][intervalIndex]);  
-            intervalIndex++; 
+            intervalIndex++;  
             if (element.text().length >= textList[textIndex].length || textList[textIndex].length == 0) { 
                 clearInterval(textInt);   
                 console.log("interval clear"); 
