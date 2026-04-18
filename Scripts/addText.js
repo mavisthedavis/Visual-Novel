@@ -23,7 +23,7 @@ function makeTxt() {
             element.append(text[i]);  
             console.log(text); 
             i++; 
-            if (element.text().length == text.length ||  text.length == 0) { 
+            if (element.text().length >= text.length ||  text.length == 0) { 
                 clearInterval(textInt);  
             } 
         }, 30);  
