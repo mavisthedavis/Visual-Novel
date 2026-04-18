@@ -7,10 +7,11 @@ var ClickWhileRun = true;
 var element = $("#text");    
 var intervalIndex = 0; 
 function makeTxt() {    
-    if (element.text().length > 0) {   
+    if (element.text().length > 0 && ClickWhileRun) {   
         console.log("check"); 
         clearInterval(textInt);     
-        element.text(textList[textIndex]);  
+        element.text(textList[textIndex]);   
+        ClickWhileRun = false; 
     }
     /* 
     if (intervalList.length > 0) { 
@@ -29,7 +30,8 @@ function makeTxt() {
         //imageChange();   
         
         //textIndex++;  
-        var textInt = setInterval(function() {   
+        var textInt = setInterval(function() {    
+            ClickWhileRun = true; 
             console.log(textIndex); 
             element.append(textList[textIndex][intervalIndex]);  
             intervalIndex++;  
@@ -44,7 +46,6 @@ function makeTxt() {
         
         
     }  
-    firstClick = false
     
 }    
 
