@@ -38,7 +38,8 @@ function makeTxt() {
             clearInterval(textInt);     
             element.text(textList[textIndex]);  
             ClickWhileRun = false; 
-        } else {  
+        } else {   
+            console.log("check"); 
             ClickWhileRun = true; 
             textIndex++;  
         }
