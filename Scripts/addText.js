@@ -4,7 +4,8 @@ $("html").on( "mousedown", makeTxt);
 textIndex = 0; 
 const parentElementList = [$("#header")[0]];  
 var delay = 0; 
-function makeTxt() {    
+function makeTxt() {   
+    var textInt; 
     if (textIndex < textList.length) {   
         //imageChange(); 
         $("#text").text(""); 
@@ -13,7 +14,7 @@ function makeTxt() {
         var repeat = false;  
         var text = textList[textIndex]; 
         var i = 0;   
-        var textInt = setInterval(function() { 
+        textInt = setInterval(function() { 
             element.append(text[i]);  
             console.log(element); 
             i++; 
