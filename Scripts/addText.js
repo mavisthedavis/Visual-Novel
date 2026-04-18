@@ -4,7 +4,7 @@ const parentElementList = [$("#header")[0]];
 var delay = 0;   
 var firstClick = true;   
 var element = $("#text");    
-var intervalIndex = 0;
+var intervalIndex = 0; 
 function makeTxt() {    
     
     /* 
@@ -18,6 +18,12 @@ function makeTxt() {
            textIndex++; 
     } */ 
     $("#text").text("");   
+    if (intervalList[x].isRunning) {  
+        clearInterval(intervalList[x]);     
+        element.text(textList[textIndex]); 
+    } else { 
+        textIndex++; 
+    }
     intervalIndex = 0; 
     if (textIndex < textList.length) {    
         //imageChange();   
