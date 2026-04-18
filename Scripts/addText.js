@@ -11,9 +11,9 @@ function makeTxt() {
     intervalIndex = 0; 
     if (firstClick) { 
         var textInt = setInterval(function() {    
-            ClickWhileRun = true; 
-            element.append(textList[textIndex][intervalIndex]);  
-            if (!(element.text().length >= textList[textIndex].length || textList[textIndex].length == 0)) {   
+            ClickWhileRun = true;   
+            if (!(element.text().length >= textList[textIndex].length || textList[textIndex].length == 0)) {    
+                element.append(textList[textIndex][intervalIndex]);
                 intervalIndex++;   
             } else { 
                 ClickWhileRun = false;  
