@@ -2,7 +2,8 @@ $("html").on( "mousedown", makeTxt);
 var textIndex = -1; 
 const parentElementList = [$("#header")[0]];  
 var delay = 0;   
-var firstClick = true;   
+var firstClick = true;     
+var ClickWhileRun = true; 
 var element = $("#text");    
 var intervalIndex = 0; 
 function makeTxt() {    
@@ -18,12 +19,7 @@ function makeTxt() {
            textIndex++; 
     } */ 
     $("#text").text("");   
-    if (intervalList[x].isRunning) {  
-        clearInterval(intervalList[x]);     
-        element.text(textList[textIndex]); 
-    } else { 
-        textIndex++; 
-    }
+    
     intervalIndex = 0; 
     if (textIndex < textList.length) {    
         //imageChange();   
@@ -36,11 +32,20 @@ function makeTxt() {
             if (element.text().length >= textList[textIndex].length || textList[textIndex].length == 0) { 
                 clearInterval(textInt);   
             } 
-        }, 30);   
+        }, 30);    
+        if (textInt.isRunning && !firstClick && ClickWhileRun) {  
+            clearInterval(textInt);     
+            element.text(textList[textIndex]);  
+            ClickWhileRun = false; 
+        } else {  
+            ClickWhileRun = true; 
+            textIndex++;  
+        }
         
         
         
-    } 
+    }  
+    firstClick = false
     
 }    
 
