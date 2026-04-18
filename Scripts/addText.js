@@ -21,7 +21,7 @@ function makeTxt() {
     intervalIndex = 0; 
     if (textIndex < textList.length) {    
         //imageChange();   
-        if (textIndex == 1 && !(firstClick) { 
+        if (textIndex == 1 && !(firstClick)) { 
             firstClick == false;  
         } else { 
             textIndex++;   
