@@ -28,7 +28,7 @@ function makeTxt() {
     if (textIndex < textList.length) {    
         //imageChange();   
         
-        textIndex++;  
+        //textIndex++;  
         var textInt = setInterval(function() {   
             console.log(textIndex); 
             element.append(textList[textIndex][intervalIndex]);  
