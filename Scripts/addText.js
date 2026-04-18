@@ -1,5 +1,5 @@
 $("html").on( "mousedown", makeTxt);  
-var textIndex = 0; 
+var textIndex = -1; 
 const parentElementList = [$("#header")[0]];  
 var delay = 0;   
 var firstClick = true;   
