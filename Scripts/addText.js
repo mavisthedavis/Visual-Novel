@@ -21,11 +21,9 @@ function makeTxt() {
     intervalIndex = 0; 
     if (textIndex < textList.length) {    
         //imageChange();   
-        if (textIndex == 1 && !(firstClick)) { 
-            firstClick == false;  
-        } else { 
-            textIndex++;   
-        }
+        
+        textIndex++;   
+        
         var textInt = setInterval(function() {   
             console.log(textIndex); 
             element.append(textList[textIndex][intervalIndex]);  
