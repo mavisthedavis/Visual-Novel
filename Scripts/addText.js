@@ -23,14 +23,15 @@ function makeTxt() {
     var i = 0; 
     if (textIndex < textList.length) {    
         //imageChange(); 
-        intervalList.push(setInterval(function() {  
+        var textInt = setInterval(function() {  
             element.append(text[i]);  
             console.log(text); 
             i++; 
             if (element.text().length >= text.length ||  text.length == 0) { 
                 clearInterval(textInt);  
             } 
-        }, 30));  
+        }, 30);  
+        intervalList.push(textInt); 
         textIndex++;   
     }
 }    
