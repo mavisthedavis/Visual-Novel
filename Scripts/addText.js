@@ -27,7 +27,8 @@ function makeTxt() {
             element.append(textList[textIndex][intervalIndex]);  
             intervalIndex++; 
             if (element.text().length >= text.length ||  text.length == 0) { 
-                clearInterval(intervalList[intervalList.length - 1]);  
+                clearInterval(textInt);   
+                console.log("interval clear"); 
             } 
         }, 30);  
         intervalList.push(textInt); 
