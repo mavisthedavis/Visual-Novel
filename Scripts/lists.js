@@ -142,7 +142,8 @@ class Background {
 		return this.#transparent; 
 	}  
 	get teacher() { 
-		return this.#teacher; 
+		return this.#teacher;  
+	}
 }
 class Nettle { 
 	#angry = new image("Images/Nettle/Angry.png", false);  
