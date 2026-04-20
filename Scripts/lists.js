@@ -227,4 +227,5 @@ const father = new Father();
 const mother = new Mother(); 
 const nickel = new Nickel();  
 
-const imgList = [nettle.happy_chill, background.transparent, background.transparent, background.transparent, background.transparent, background.transparent, background.teacher, background.teacher, background.teacher, background.teacher, background.teacher, background.teacher, background.teacher, background.transparent, couns.interested, nettle.talking, couns.huh, background.transparent, couns.interested, couns.angry, background.transparent];  
+const imgList = [nettle.happy_chill, background.transparent, background.transparent, background.transparent, background.transparent, background.transparent, background.teacher, background.teacher, background.teacher, background.teacher, background.teacher, background.teacher, background.teacher, background.transparent, couns.interested, nettle.talking, couns.huh, background.transparent, couns.interested, couns.angry, background.transparent, background.transparent, background.transparent, nettle.talking, couns.huh, nettle.happy_chill, couns.huh, background.transparent, couns.angry, nettle.talking, couns.huh, background.transparent, nettle.talking, couns.angry, nettle.angry, couns.interested, nettle.angry, 
+				background.transparent, background.transparent];  
