@@ -1,11 +1,12 @@
 $("html").on( "mousedown", makeTxt);  
 var textIndex = -1; 
 const parentElementList = [$("#header")[0]];  
-const delay = 10;   
+const delay = 20;   
 var firstClick = true;     
 var ClickWhileRun = false; 
 var element = $("#text");    
 var intervalIndex = 0; 
+
 function makeTxt() {    
     $("#text").text("");   
     intervalIndex = 0; 
