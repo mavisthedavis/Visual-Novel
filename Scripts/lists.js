@@ -183,7 +183,7 @@ class Father {
 } 
 class Mother { 
 	#smile = new image("Images/Mother/evil smile.png", false);  
-	#happy = new image("Images/Mother/huh.png", false);   
+	#happy = new image("Images/Mother/happy.png", false);   
 	
 	get smile() { 
 		return this.#smile; 
