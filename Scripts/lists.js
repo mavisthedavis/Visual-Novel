@@ -136,10 +136,13 @@ class image {
 }   
 
 class Background { 
-	#transparent = new image("Images/transparent.png", false); 
+	#transparent = new image("Images/transparent.png", false);  
+	#teacher = new image("Images/Teacher.png, false); 
 	get background() { 
 		return this.#background; 
-	} 
+	}  
+	get teacher() { 
+		return this.#teacher; 
 }
 class Nettle { 
 	#angry = new image("Images/Nettle/Angry.png", false);  
@@ -216,4 +219,11 @@ class Nickel {
 		return this.#talking; 
 	} 
 } 
+const background = Background(); 
+const nettle = Nettle(); 
+const couns = Couns(); 
+const father = Father(); 
+const mother = Mother(); 
+const nickel = Nickel();  
 
+const imgList = [background.transparent, background.transparent, background.transparent, background.transparent, background.transparent, background.teacher];  
