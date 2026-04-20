@@ -1,7 +1,7 @@
 
 
 function imageChange() {  
-    transCheck(); 
+    //transCheck(); 
     if (imgList[textIndex].effect != false) { 
       console.log("test"); 
     } 
