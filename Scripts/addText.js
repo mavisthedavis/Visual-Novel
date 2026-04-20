@@ -7,6 +7,10 @@ var ClickWhileRun = false;
 var element = $("#text");    
 var intervalIndex = 0; 
 
+window.onload = function() { 
+    makeTxt(); 
+}
+
 function makeTxt() {    
     $("#text").text("");   
     intervalIndex = 0; 
