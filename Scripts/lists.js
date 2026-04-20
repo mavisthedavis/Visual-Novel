@@ -176,7 +176,7 @@ class Couns {
 	} 
 } 
 class Father { 
-	#mh = new image("Images/Couns/Father.png", false); 
+	#mh = new image("Images/Father/Father.png", false); 
 	get mh() { 
 		return this.#mh; 
 	} 
