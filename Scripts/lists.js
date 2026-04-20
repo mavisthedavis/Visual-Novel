@@ -220,11 +220,11 @@ class Nickel {
 		return this.#talking; 
 	} 
 } 
-const background = Background(); 
-const nettle = Nettle(); 
-const couns = Couns(); 
-const father = Father(); 
-const mother = Mother(); 
-const nickel = Nickel();  
+const background = new Background(); 
+const nettle = new Nettle(); 
+const couns = new Couns(); 
+const father = new Father(); 
+const mother = new Mother(); 
+const nickel = new Nickel();  
 
 const imgList = [background.transparent, background.transparent, background.transparent, background.transparent, background.transparent, background.teacher];  
