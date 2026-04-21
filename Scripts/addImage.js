@@ -16,7 +16,7 @@ function transCheck() {
         $(".ext").css("background-color", "#748584");  
         $("#view").css("background-color", "white");  
         $("#text").css("color", "black");  
-        $("#audio1").attr("src", "Songs/School.mp3");  
+        //$("#audio1").attr("src", "Songs/School.mp3");  
         $("#audio1")[0].play(); 
     } 
     if (textIndex == 39) { 
@@ -26,7 +26,7 @@ function transCheck() {
         $("#view").css("background-color", "#e4d9ce");  
         $("#text").css("color", "black"); 
         $("#audio1")[0].pause(); 
-        $("#audio2").attr("src", "Songs/Parents song.mp3");  
+        //$("#audio2").attr("src", "Songs/Parents song.mp3");  
         $("#audio2")[0].play(); 
 
     } 
@@ -37,7 +37,7 @@ function transCheck() {
         $("#view").css("background-color", "white");  
         $("#text").css("color", "black");   
         $("#audio2")[0].pause();
-        $("#audio3").attr("src", "Songs/feild.mp3");  
+        //$("#audio3").attr("src", "Songs/feild.mp3");  
         $("#audio3")[0].play();
     } 
     if (textIndex == 108) { 
