@@ -1,4 +1,4 @@
-var textList = ["Click", 
+var textList = ["Click to start", 
 			"Nettle is a goblin, short statured even for one of her kind, if I were to make a guess, I would say taller than a pumpkin, though maybe not taller than a pumpkin with a couple of cabbages stacked on top. Though her height matches her temper, I guess the universe evens things out in its own way.", 
             "Nettle lives just off of the beaten path, on the outskirts of the bustling town of Dirtfarm (really creative name, I know). Though it's quite peaceful, being so removed from everything. One of the rare places where you can just, forget the world. Get lost in a good book.",  
             "I imagine Nettle has a lot of time to think about nothing in particular.", 
@@ -118,7 +118,7 @@ var textList = ["Click",
             "Eventually the path split, and the two parted ways. Nettle never saw Nickel or his strange cart again. She wouldn't say that her questions had really been answered, but the talk Nettle had with Nickel got her thinking about what she wanted to do, and she guessed that was good enough, not relying on other people to answer her questions and all that.",  
             
             "Also what on earth is a \"Walmart\".",   
-			"Hi, hi hi hi hi. Thank you for... playing? Reading, I don't really know with these things."
+			"Hi, hi hi hi hi. Thank you for... playing? Reading? I don't really know with these things."
             ];  
 
 class image {  
